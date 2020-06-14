@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<body style="background-color:#B38C60;">
+		<head>
+			<title>Page de l'histoire</title>
+		</head>
+		<style>
+			div.a {
+			text-align: center;
+			}
+			body{
+        
+        		padding: 10px;
+        		background-color:gray;
+				background-image: url("back/brique3.jpg");
+				background-repeat: no-repeat;
+
+				background-size: cover;
+        
+        		margin: auto;
+        		width: 70%;
+        		height: 70%;
+        	}
+        	.back{
+        
+        		padding: 10px;
+        		background-color:gray;
+				background-image: url("back/parchemain1.jpg");
+				background-repeat: no-repeat;
+
+				background-size: cover;
+        
+        		margin: auto;
+        		width: 75%;
+  				height: 50%;
+        		box-shadow: 4px 4px 4px black;
+        	
+    		}
+    		.backtext{
+    			
+        		padding-top: 10px;
+        		margin: auto;
+        		width: 95%;
+        		height: 590px;
+        	
+    		}
+    		h1{
+        		font-size: 40px;
+        		font-style: italic;
+
+        	}
+        	p{
+        		font-size: 20px;
+        	}
+        	button{
+        		background:inherit;
+        		border: inherit;
+        	}
+
+        	@media (max-width: 640px) {
+        		* {
+					box-sizing: border-box;
+				}
+				
+
+				body {
+					width: auto;
+					margin: 0;
+					padding: 0;
+				}
+
+				img,
+				table,
+				td,
+				pre,
+				textarea,
+				input,
+					max-width: 100%;
+				}
+
+				img {
+					height: auto;
+				}
+
+				.hide_mobile {
+					display: none !important;
+				}	
+        	}
+
+		</style>
+
+	<body>
+	
+		<div class="a">
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<main class="back">
+				<font face="gabriola">
+					<div classe="mur">
+						<div id="0" >
+							<div class="backtext">
+							<h1>Nous retrouvons ici une description de chaque membre du projet avec ce qu'ils ont apporté sur ce dit projet.</h1>
+							
+							</div>
+						</div>
+						<div id="1" >
+							<div class="backtext">
+								<p>Angebaud &emsp; Calixte &emsp; 19ans<br />
+								Classe: L2R &emsp; &emsp; Race: Humain &emsp; &emsp; Oriantation: IRV &emsp; &emsp; Taille: ~1m84<br />
+								J'ai aidé à la programmation des fonctions en Java script, ainsi qu'au code en css pour l'affichage sur le site. De plus j'ai été assez maniaque pour mettre le code au propre avec les tabs, pour qu'il soit plus agréable à lire et à comprendre.<br />
+								Déscription physque:<br /></p>
+								<img src="membre_du_groupe\calixte.jpg" width="25%" alt=""  /><br />
+								<a href="https://www.facebook.com/calixte.angebaud"><img src="back\facebook.png" width="30px"></a> &emsp;
+								mail: calixte.angelbaud@efrei.net &emsp;
+								<a href="https://www.linkedin.com/in/calixte-angebaud-20a57b177/"><img src="back\linkedin.png" width="30px"></a>
+								
+							</div>
+						</div>
+						<div id="2" >
+							<div class="backtext">
+								<p>Cotton &emsp; Florent &emsp; 19ans<br />
+								Classe: L2R &emsp; &emsp; Race: Cyborg &emsp; &emsp; Oriantation: A&E &emsp; &emsp; Taille: ~1m86<br />
+								J'ai été le principal acteur de ce projet, car c'est moi qui ai proposé le sujet pour le site web. De plus, j'ai fait une grosse partie du code du site, et j'ai aussi réalisé le contenu des différentes pages.<br />
+								Déscription physque:<br /></p>
+								<img src="membre_du_groupe\florent.jpg" width="15%" alt=""  /><br />
+								<a href="https://www.facebook.com/florent.cotton.12"><img src="back\facebook.png" width="30px"></a> &emsp;
+								mail: florent.cotton@efrei.net &emsp;
+								<a href="https://www.linkedin.com/in/florent-cotton-8115b6176/"><img src="back\linkedin.png" width="30px"></a>
+							</div>
+						</div>
+						<div id="3" >
+							<div class="backtext">
+								<p>Jacob &emsp; Meline &emsp; 19ans<br />
+								Classe: L2R &emsp; &emsp; Race: haut-elfe &emsp; &emsp; Oriantation: DS &emsp; &emsp; Taille: ~1m60<br />
+								Des recherches sur Internet pour pouvoir réaliser certains passages de code où nous étions bloqués, en autre le code concernant le menu.<br />
+								Déscription physque:<br /></p>
+								<img src="membre_du_groupe\meline.jpg" width="21%" alt=""  /><br />
+								<a href="https://www.facebook.com/meline.jacob.5"> <img src="back\facebook.png" width="30px"> </a> &emsp;
+								mail: meline.jacobd@efrei.net &emsp;
+								<a href="https://www.facebook.com/meline.jacob.5"> <img src="back\facebook.png" width="30px"> </a>
+							</div>
+						</div>
+					</div>
+				</font>
+			</main>
+
+			<br /><br />
+			<nav>
+                	<button type="button" id="dawn"> <img src="back\fleche.png"> </button>
+                	<button type="button" id="up"> <img src="back\fleche2.png"> </button>
+
+            </nav>
+
+				<FONT size="6" face="French Script MT">
+					<a href="page_de_garde.html">retour à l'aceuil</a><br />
+				</FONT>
+		</div>
+
+		<script >
+					console.log("Début console log") ;
+
+        
+					let lastTimestamp = Date.now();
+
+
+
+					function invisibilite(thingId) { 
+						var targetElement; 
+						targetElement = document.getElementById(thingId) ;
+						targetElement.style.display = "none" ; 
+					}
+					function visibilite(thingId) { 
+						var targetElement; 
+						targetElement = document.getElementById(thingId) ;
+						targetElement.style.display = "" ; 
+					}
+
+					Page=0;
+					affichage(Page);
+
+					function up(){
+						Page=Page+1
+						if (Page == 4){
+							Page = Page-1;
+						}
+						affichage(Page);
+					}
+
+					function dawn(){
+						Page=Page-1
+						if (Page == -1){
+							Page = Page+1;
+						}
+						affichage(Page);
+					}
+
+					function affichage(Page){
+						for (var i = 0; i < 4; i++) {
+							if (i == Page) {
+								visibilite(i);
+							}
+							else{
+								invisibilite(i);
+							}
+						}
+						
+					}
+
+
+					document.querySelector('#up').onclick = up;
+					document.querySelector('#dawn').onclick = dawn;
+
+					
+					
+
+				</script>
+  	</body>
+</html>

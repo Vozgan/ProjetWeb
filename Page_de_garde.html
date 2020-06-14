@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page d'acueille</title>
+	</head>
+	<style>
+			div.a {
+				text-align: center;
+			}
+			body {
+  				background-color: #white;
+				background-image: url("back/parchemain1.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+
+			.wrap{
+			  position:relative;
+			  width:80vmin; height:80vmin;
+			  background:inherit;
+			  transform:scale(0.2) translatez(0px);
+			  opacity:0;
+			  transition:transform .5s, opacity .5s;
+			}
+			a{
+			  position:absolute;
+			  left:0; top:0;
+			  width:47.5%; height:47.5%;
+			  overflow:hidden;
+			  transform:scale(.5) translateZ(0px);
+			  background: #e7cfa2;
+			}
+			a div{
+			  height:100%;
+			  background-size:cover;
+			  opacity:.5;
+			  transition:opacity .5s;
+			  border-radius:inherit;
+			}
+			a:nth-child(1){
+			  border-radius:40vmin 0 0 0;
+			  transform-origin: 110% 110%;
+			  transition:transform .4s .15s;
+			}
+			a:nth-child(1) div{
+			  background-image:url('back/table.jpg');
+			  text-align: left;
+			  padding-top: 335px;
+			  font-size: 30px;
+			  color : white;
+			}
+			a:nth-child(2){
+			  border-radius:0 40vmin 0 0;
+			  left:52.5%;
+			  transform-origin: -10% 110%;
+			  transition:transform .4s .2s;
+			}
+			a:nth-child(2) div{
+			  background-image:url('back/table.jpg');
+			  text-align: right;
+			  padding-top: 335px;
+			  font-size: 30px;
+			  color : white;
+			}
+			a:nth-child(3){
+			  border-radius:0 0 0 40vmin;
+			  top:52.5%;
+			  transform-origin: 110% -10%;
+			  transition:transform .4s .25s;
+			}
+			a:nth-child(3) div{
+			  background-image:url('back/table.jpg');
+			  text-align: left;
+			  font-size: 30px;
+			  color : white;
+			}
+			a:nth-child(4){
+			  border-radius:0 0 40vmin 0;
+			  top:52.5%; left:52.5%;
+			  transform-origin: -10% -10%;
+			  transition:transform .4s .3s;
+			}
+			a:nth-child(4) div{
+			  background-image: url('back/table.jpg');
+			  text-align: right;
+			  font-size: 30px;
+			  color : white;
+			}
+			a:nth-child(5){
+			  width:55%;height:55%;
+			  left:22.5%; top:22.5%;
+			  border-radius:50vmin;
+			  box-shadow:0 0 0 5vmin rgba(231, 207, 162, 0,1);
+			  transform:scale(1);
+			}
+			a:nth-child(5) div{
+			  background-image: url('back/map.jpg');
+			}
+			span{
+			  position:relative;
+			  display:block;
+			  margin:0 auto;
+			  top:45vmin;
+			  width:10vmin; height:10vmin;	
+			  border-radius:100%;
+			  background:#585247;
+			  transform:translateZ(0px);
+			}
+			span span{
+			  position:absolute;
+			  width:60%;height:3px;
+			  background:#ACA696;
+			  left:20%; top:50%;
+			  border-radius:0;
+			}
+			span span:after, span span:before{
+			  content:'';
+			  position:absolute;
+			  left:0; top:-1.5vmin;
+			  width:50%; height:50%;
+			  background:inherit;
+			}
+			span span:after{
+			  top:1.5vmin;
+			}
+			span:hover + .wrap, .wrap:hover{
+			  transform:scale(.8) translateZ(0px);
+			  opacity:1;
+			}
+			span:hover + .wrap a, .wrap:hover a{
+			  transform:scale(1) translatez(0px);
+			}
+			a:hover div{
+			  opacity:1;
+			  transform:translatez(0px);
+			}
+
+
+			.tableaux{
+			  display:inline-block;
+			  vertical-align:top;
+			}
+			h1{
+        		font-size: 80px;
+        		font-style: italic;
+
+        	}
+        	h2{
+        		font-size: 60px;
+        		font-style: italic;
+
+        	}
+        	p{
+        		font-size: 35px;
+        		margin: 30px;
+
+        	}
+
+        	@media (max-width: 640px) {
+        		* {
+					box-sizing: border-box;
+				}
+				
+
+				body {
+					width: auto;
+					margin: 0;
+					padding: 0;
+				}
+
+				img,
+				table,
+				td,
+				pre,
+				textarea,
+				input,
+					max-width: 100%;
+				}
+
+				img {
+					height: auto;
+				}
+
+				.hide_mobile {
+					display: none !important;
+				}	
+        	}
+		</style>
+	<body >
+		<div class="a">
+			<FONT face="French Script MT">
+				<h1>Itora</h1>
+
+
+				<p>Ce site est fait pour regrouper toutes les informations que nous avons besoin pour faire un Jeux de rôles sur un thème fantaisie. <br />
+				Ce jeux de rôle utilise des dès 100 pour étre réalisé. </p>
+
+				<br />
+
+				<h2>L'histoire d'Itora :</h2>
+
+				<p>
+				Bienvenue dans le monde d'Itora.
+				<br />
+				Un monde rempli de mystères, de races différentes mais ne s'entendant pas vraiment.<br />
+                Durant des générations, ces races ne pouvaient pas se supporter et se sont fait la guerre. Tout cela, jusqu'à l'arrivée d'un humain. Cet humain a essayé de tous les rallier. Après un millénaire de guerre sans fin, la paix fut de retour.
+                Avec la paix, le développement commercial, technologique et magique ont explosé. Après tant de temps passer à faire la guerre, tous cherchaient maintenant à se développer main dans la main. Ensemble, ils construisirent un royaume gigantesque, où tous vivaient en harmonie.<br />
+                Enfin, ça, c'est ce que la majeure partie des personnes pensaient. Mais ce n'était pas vraiment le cas. Si toutes ces races s'étaient finalement rassemblées, c'était pour lutter contre une plus grande menace. Mais même pour les personnes étant au courant, c'était assez vague. En effet tout ce qu'ils savaient, c'était que de la magie noire avait repris le contrôle de personnes et avait rasé l'ancienne capitale du nom de "Plusturm".<br />
+                A présent, les guerriers les plus forts de chaque espèce avaient été choisis afin d’arpenter le monde et découvrir ce qu'il s’y tramait. Malheureusement, depuis bientôt 100 ans, rien n'avait été découvert. Cependant, il y a peu, des traces de cette magie ont été aperçu un peu partout dans le monde. <br />
+                C'est là que votre aventure débute. Si vous avez les qualités requises, enrôlez-vous et venez nous aider à sauver ce monde. Que vous soyez doués de vos mains, experts magicien ou encore combattants aguerris, venez essayer de percer ce mystère qui perturbe notre monde.<br />
+                Les grands dirigeants de chaque race ont recruté les experts de chaque classe afin d’essayer de trouver et d'éliminer les personnes coupables.<br /><br />
+                Vous en faites partis. Partez à l'aventure, répondez à vos missions et découvrez ce qui se cache derrière tout ça.		
+				</p>
+
+			</FONT>
+			<div class="tableaux">
+				<span><span></span></span>
+				<div class="wrap">
+					<a href="bestiaire.html"><div>bestiaire</div></a>
+					<a href="monde.html"><div>monde</div></a>
+					<a href="classes.html"><div>classes</div></a>
+					<a href="races.html"><div>races</div></a>
+					<a href="#"><div></div></a>
+				</div>
+			</div>
+			<div class="tableaux">
+				<span><span></span></span>
+				<div class="wrap">
+					<a href="membre.html"><div>membre</div></a>
+					<a href="creation_de_perso.html"><div>creation</div></a>
+					<a href="map.html"><div>map</div></a>
+					<a href="missions.html"><div>missions</div></a>
+					<a href="#"><div></div></a>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

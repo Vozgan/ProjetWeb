@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html>
+	<body>
+		<head>
+			<title>page de création</title>
+		</head>
+		<style>
+			body{
+        
+        		padding: 10px;
+        		background-color:gray;
+				background-image: url("back/back1.jpg");
+				background-repeat: no-repeat;
+
+				background-size: cover;
+        
+        		margin: auto;
+        	}
+			div.a {
+				text-align: center;
+			}	
+
+			.conteneur{
+		        display: flex;
+		        flex-wrap:wrap;
+		        justify-content: space-around;
+		        margin:10px;
+		    }
+		    .back{
+        
+        		padding: 10px;
+        		background-color:gray;
+				background-image: url("back/table.jpg");
+				background-repeat: no-repeat;
+
+				background-size: cover;
+        
+        		margin: auto;
+        		width: 75%;
+  				height: 50%;
+        		box-shadow: 4px 4px 4px black;
+        	
+    		}
+    		.back2{
+        
+        		padding: 10px;
+        		background-color:gray;
+				background-image: url("back/parchemain1.jpg");
+				background-repeat: no-repeat;
+
+				background-size: cover;
+        
+        		margin: auto;
+        		width: 75%;
+  				height: 50%;
+        		box-shadow: 4px 4px 4px black;
+        	
+    		}
+
+    		.common{
+		        margin:auto;
+		        padding: 10px;
+		        
+		        box-sizing: border-box;
+		        max-width: 1000px;
+		        width: 100%;
+		    }
+
+    		
+
+		    table th, table td {
+					text-align     : center;
+					vertical-align : middle;
+					padding        : 5px;
+		        }
+		    a{
+        		color: #e7cfa2;
+        	}
+		   
+    		
+        	button{
+        		background:inherit;
+        		border: inherit;
+        	}
+        	.disabled{
+        		color: #e7cfa2;
+        	}
+
+        	@media (max-width: 640px) {
+        		* {
+					box-sizing: border-box;
+				}
+				
+
+				body {
+					width: auto;
+					margin: 0;
+					padding: 0;
+				}
+
+				img,
+				table,
+				td,
+				pre,
+				textarea,
+				input,
+					max-width: 100%;
+				}
+
+				img {
+					height: auto;
+				}
+
+				.hide_mobile {
+					display: none !important;
+				}	
+        	}
+
+		</style>
+
+	<body>
+		<main>
+		
+		<div id="0"> 
+		<p>
+			<div class="back">
+
+				<form action="page" method="post" class="common2">
+		                <div class="conteneur">
+		                    
+		                    <input type="text" id="nom" name="naom" placeholder="Entrer le nom du personnage" required>
+		                    <input type="text" id="prenom" name="prenon"placeholder="Entrer le prénnom du personnage" required>
+							<input type="text" id="age" name="age"placeholder="l'age du personnage" required>
+							
+						</div>
+						<br /><br />
+						<div class="conteneur">
+							
+		                     <select id="races" name="races">
+		                        <option value="Ange">Ange</option>
+		                        <option value="Démon">Démon</option>
+								<option value="Vampire">Vampire</option>
+		                        <option value="Draconien">Draconien</option>
+								<option value="Syrène/Triton">Syrène/Triton</option>
+		                        <option value="Orcs">Orcs</option>
+								<option value="Elfe">Elfe</option>
+		                        <option value="Haut-elfe">Haut-elfe</option>
+								<option value="Elfe des bois">Elfe des bois</option>
+		                        <option value="Elfe noir">Elfe noir</option>
+								<option value="Homme félins">Homme félins</option>
+		                        <option value="Lycanthrope">Lycanthrope</option>
+								<option value="Humain">Humain</option>
+		                        <option value="Cyborg">Cyborg</option>
+								
+		                    </select>
+		                    <select id="classes" name="classes">
+		                        <option value="Assasins">Assasins</option>
+		                        <option value="Alchimiste">Alchimiste</option>
+								<option value="Berserkers">Berserkers</option>
+		                        <option value="Clerc">Clerc</option>
+								<option value="Elémentaliste">Elémentaliste</option>
+		                        <option value="Gunslingers">Gunslingers</option>
+								<option value="Ingéniomenciens">Ingéniomenciens</option>
+		                        <option value="Invocateur">Invocateur</option>
+								<option value="Mages">Mages</option>
+		                        <option value="Nécromentiens">Nécromentiens</option>
+								<option value="Paladins">Paladins</option>
+		                        <option value="Rodeurs">Rodeurs</option>
+								<option value="Sabreurs">Sabreurs</option>
+		                        <option value="Voleurs">Voleurs</option>
+								
+								<input type="text" id="orientation" name="orientation"placeholder="l'orientation du peronnage" required>
+								<input type="text" id="taille" name="taille"placeholder="Sa taille" required>
+								<input type="text" id="poid" name="poid"placeholder="son poid" required>
+
+		                    </select>
+						</div>
+						<br /><br />
+						<div class="conteneur">
+							<TEXTAREA type="text" id="lore" cols="150" rows="10" name="histoire" placeholder="écriver le lore du peronnage" ></TEXTAREA>
+						</div>
+							<br /><br />
+						<div class="conteneur">
+							<TEXTAREA type="text" id="caractère" cols="150" rows="10" name="caractère" placeholder="écriver le Caractère du peronnage" ></TEXTAREA>
+						</div>
+							<br /><br />
+						<div class="conteneur">
+							<TEXTAREA type="text" id="pouvoir" cols="150" rows="10" name="pouvoir" placeholder="décriver le pouvoir du peronnage" ></TEXTAREA>
+
+		                
+		                </div>
+		                <div class="a">
+		                	<button type="button" id="ajouter" class="disabled">Ajouter</button>
+		                </div>
+
+				</form>
+			</div>
+			
+		</p>
+	</div>
+		
+		 	<div id="1">
+		 		<div class="back2">
+                <table id="users" class="common">
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénon</th>
+                        <th>Age</th>
+                    </tr>
+                </table>
+                <table id="users1" class="common">
+                	<tr>
+                    	<th>Races</th>
+                    	<th>Classes</th>
+                    	<th>Oriantation</th>
+                    	<th>Taille</th>
+                    	<th>Poid</th>
+                    </tr>
+                </table>
+                <table id="users2" class="common">
+                    <tr>
+                    	<th>Lore</th>
+                    </tr>
+                </table>
+                <table id="users3" class="common">
+                    <tr>
+                    	<th>Carractère</th>
+                    </tr>
+                </table>
+                <table id="users4" class="common">
+                    <tr>
+                    	<th>Pouvoir</th>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <div class="a">
+            	<nav>
+                	<button type="button" id="dawn"> <img src="back\fleche.png"> </button>
+                	<button type="button" id="up"> <img src="back\fleche2.png"> </button>
+
+            	</nav>
+
+				<FONT size="6" face="French Script MT">
+					<a href="page_de_garde.html">retour à l'aceuil</a><br />
+				</FONT>
+			</div>
+
+        </main>
+	<script>	
+	function ajouter() {
+			
+				let nom    = document.getElementById('nom');
+				let prenom = document.getElementById('prenom');
+				let age  = document.getElementById('age');
+				let races   = document.getElementById('races');
+				let classes = document.getElementById('classes');
+				let orientation = document.getElementById('orientation');
+				let taille = document.getElementById('taille');
+				let poid = document.getElementById('poid');
+				let lore = document.getElementById('lore');
+				let caractère = document.getElementById('caractère');
+				let pouvoir = document.getElementById('pouvoir');
+				
+				
+				if(nom.checkValidity() && prenom.checkValidity() && age.checkValidity() && races.checkValidity() && classes.checkValidity() && orientation.checkValidity() && taille.checkValidity() && poid.checkValidity() && lore.checkValidity() && caractère.checkValidity() && pouvoir.checkValidity()) {
+
+				
+
+				gun = 0;
+				for (var gun = 0; gun < 9; gun++) {
+					if (gun == 0){
+						let tr = document.createElement('tr');
+
+						let td = document.createElement('td');
+						td.textContent = nom.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+						td = document.createElement('td');
+						td.textContent = prenom.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+						td = document.createElement('td');
+						td.textContent = age.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+						document.getElementById('users').appendChild(tr);
+				
+					
+						let tds = document.querySelectorAll('.usersTD');
+						for(let i = 0; i < tds.length - 3; i++) {
+							tds[i].style.borderBottom = '1px solid black';
+						}
+					}
+					else if( gun == 2){
+						let tr = document.createElement('tr');
+
+						let td = document.createElement('td');
+						td.textContent = races.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+						td = document.createElement('td');
+						td.textContent = classes.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+						td = document.createElement('td');
+						td.textContent = orientation.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+						td = document.createElement('td');
+						td.textContent = taille.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+						td = document.createElement('td');
+						td.textContent = poid.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+
+						document.getElementById('users1').appendChild(tr);
+				
+					
+						let tds = document.querySelectorAll('.usersTD');
+						for(let i = 0; i < tds.length - 5; i++) {
+							tds[i].style.borderBottom = '1px solid black';
+						}
+					}
+					else if (gun ==4){
+						let tr = document.createElement('tr');
+
+						let td = document.createElement('td');
+						td.textContent = lore.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+
+						document.getElementById('users2').appendChild(tr);
+				
+						
+						let tds = document.querySelectorAll('.usersTD');
+						for(let i = 0; i < tds.length - 1; i++) {
+							tds[i].style.borderBottom = '1px solid black';
+						}
+					}else if (gun ==6){
+						let tr = document.createElement('tr');
+
+						let td = document.createElement('td');
+						td.textContent = caractère.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+
+						document.getElementById('users3').appendChild(tr);
+				
+						
+						let tds = document.querySelectorAll('.usersTD');
+						for(let i = 0; i < tds.length - 1; i++) {
+							tds[i].style.borderBottom = '1px solid black';
+						}
+					}
+					else if (gun ==8){
+						let tr = document.createElement('tr');
+
+						let td = document.createElement('td');
+						td.textContent = pouvoir.value;
+						td.className   = 'usersTD';
+						tr.appendChild(td);
+
+						document.getElementById('users4').appendChild(tr);
+				
+					
+						let tds = document.querySelectorAll('.usersTD');
+						for(let i = 0; i < tds.length - 1; i++) {
+							tds[i].style.borderBottom = '1px solid black';
+						}
+					}
+					gun = gun +1;
+				}
+			}
+		}
+		
+
+		function invisibilite(thingId) { 
+						var targetElement; 
+						targetElement = document.getElementById(thingId) ;
+						targetElement.style.display = "none" ; 
+					}
+					function visibilite(thingId) { 
+						var targetElement; 
+						targetElement = document.getElementById(thingId) ;
+						targetElement.style.display = "" ; 
+					}
+
+					Page=0;
+					affichage(Page);
+
+					function up(){
+						Page=Page+1
+						if (Page == 2){
+							Page = Page-1;
+						}
+						affichage(Page);
+					}
+
+					function dawn(){
+						Page=Page-1
+						if (Page == -1){
+							Page = Page+1;
+						}
+						affichage(Page);
+					}
+
+					function affichage(Page){
+						for (var i = 0; i < 2; i++) {
+							if (i == Page) {
+								visibilite(i);
+							}
+							else{
+								invisibilite(i);
+							}
+						}
+						
+					}
+
+
+			document.querySelector('#up').onclick = up;
+			document.querySelector('#dawn').onclick = dawn;
+			document.getElementById('ajouter').onclick = ajouter;
+	</script>		
+  	</body>
+
+</html>
